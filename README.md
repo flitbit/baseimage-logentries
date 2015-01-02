@@ -43,7 +43,7 @@ Take a look at [`logentries-message-template`](https://github.com/flitbit/baseim
 
 Basically, the contents of `logentries-message-template` becomes the template line that determines how messages look to LogEntries.
 
-You can override the `logentries-message-template` in your derived container by supplying own _logentries-message-template_ file to overwrite the one we provided:
+You can override the `logentries-message-template` in your derived container by supplying your own _logentries-message-template_ file to overwrite the one we provided:
 
 ```
 FROM flitbit/baseimage-logentries:<VERSION>
