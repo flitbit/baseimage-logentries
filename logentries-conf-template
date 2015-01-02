@@ -1,0 +1,12 @@
+template logentriesTemplate {
+	 template("LOGENTRIES_TOKEN LOGENTRIES_TEMPLATE\n");
+	 template_escape(no);
+};
+
+destination d_network_logentries {
+       tcp("api.logentries.com" port(10000) template(logentriesTemplate));
+};
+
+log {
+	source(s_src); destination(d_network_logentries);
+};
