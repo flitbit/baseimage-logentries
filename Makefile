@@ -1,4 +1,4 @@
-NAME = baseimage-logentries
+NAME = flitbit/baseimage-logentries
 VSN = 0.1.0
 
 .PHONY: all build tag_latest
@@ -6,7 +6,7 @@ VSN = 0.1.0
 all: build
 
 build:
-	docker build -t $(NAME):$(VSN) --rm image
+	docker build -t $(NAME):$(VSN) --rm .
 
 tag_latest:
 	docker tag $(NAME):$(VSN) $(NAME):latest

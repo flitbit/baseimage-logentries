@@ -20,7 +20,7 @@ Set an environment variable `LOGENTRIES_TOKEN` on your container when you `docke
 
 ### Test-drive
 
-To see it in work, launch a container from this image using the following command (replace the invalid GUID with your LogEntries token):
+To see it work, launch a container from this image using the following command (replace the invalid GUID with your LogEntries token):
 
 ```bash
 > docker run --rm -i -t -e "LOGENTRIES_TOKEN=00000000-0000-0000-0000-000000000000" flitbit/baseimage-logentries /sbin/my_init -- /bin/bash
