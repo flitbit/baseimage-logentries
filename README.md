@@ -6,9 +6,19 @@ If you don't already know how [baseimage](https://github.com/phusion/baseimage-d
 
 ## Use
 
-To use this image you'll need to already have a log set up on [LogEntries.com for Token-based Logging](https://logentries.com/doc/syslog-ng/).
+This image is available from the [Docker registry](https://registry.hub.docker.com/u/flitbit/baseimage-logentries/).
+
+```bash
+> docker pull flitbit/baseimage-logentries
+```
+
+### Requirements
+
+To use this image you'll need to setup [LogEntries.com for Token-based Logging](https://logentries.com/doc/syslog-ng/).
 
 Set an environment variable `LOGENTRIES_TOKEN` on your container when you `docker run`, that's it.
+
+### Test-drive
 
 To see it in work, launch a container from this image using the following command (replace the invalid GUID with your LogEntries token):
 
